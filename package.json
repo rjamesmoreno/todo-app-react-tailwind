@@ -14,8 +14,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-toastify": "^10.0.5",
-    "tailwindcss-animate": "^1.0.7",
-    "wrangler": "^3.63.2"
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
