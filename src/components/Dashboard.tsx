@@ -85,13 +85,15 @@ export default function Dashboard() {
   }
 
   return (
-    <div className="w-[70vw] p-12 bg-[#3450A1] rounded-xl min-h-[80vh]">
+    <div className="w-full md:w-[70vw] p-4 md:p-12 bg-[#3450A1] rounded-xl min-h-[80vh]">
       <div className="grid grid-flow-row justify-center">
-        <h1 className="text-2xl text-white pt-5 text-center">To-do List</h1>
+        <h1 className="text-xl md:text-2xl text-white pt-5 text-center">
+          To-do List
+        </h1>
         <div className="relative p-4">
           <form onSubmit={handleCreateTask}>
             <input
-              className="py-2 px-4 w-[30vw] rounded-full bg-[#183075] text-white"
+              className="py-2 px-4 w-full md:w-[30vw] rounded-full bg-[#183075] text-white"
               placeholder="Enter Task"
               type="text"
               value={taskName}
@@ -135,13 +137,13 @@ export default function Dashboard() {
           </ul>
         </section>
         <section className="my-2 h-[15vh] flex flex-col items-center justify-center">
-          <div className="py-2 px-4 w-[30vw] rounded bg-[#5C76BD] mb-2 flex justify-between">
+          <div className="py-2 px-4 w-full md:w-[30vw] rounded bg-[#5C76BD] mb-2 flex justify-between">
             <p className="grid place-items-center">All Tasks</p>
             <p className="py-1 px-5 bg-[#23366D] rounded text-red-500">
               {tasks.length}
             </p>
           </div>
-          <div className="py-2 px-4 w-[30vw] rounded bg-[#5C76BD] flex justify-between">
+          <div className="py-2 px-4 w-full md:w-[30vw] rounded bg-[#5C76BD] flex justify-between">
             <p className="grid place-items-center">Completed Tasks</p>
             <p className="py-1 px-5 bg-[#23366D] rounded text-red-500">
               {tasks.filter((task) => task.isFinished).length}
