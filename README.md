@@ -2,6 +2,7 @@
 
 This is a simple to-do list manager built using React, Vite, and Tailwind CSS. The project aims to showcase skills in web development, particularly in creating a functional and aesthetic task manager application.
 
+https://todo-app-rendell.pages.dev
 ## Features
 
 - Add new tasks
